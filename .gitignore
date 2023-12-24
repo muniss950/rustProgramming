@@ -1,0 +1,31 @@
+
+# Rust
+/target/
+Cargo.lock
+/target/
+
+# Generated files
+*.rs.bk
+*.rs.swp
+
+# IDE files
+.idea/
+.vscode/
+
+# Rust/Cargo specific
+/rustfmt.toml
+/Cargo.toml.orig
+
+# Test result files
+/target/debug/
+/target/release/
+
+# Documentation
+/target/doc/
+
+# Build artifacts
+*.rlib
+*.rmeta
+
+# Other
+.DS_Store
