@@ -1,31 +1,34 @@
-
-# Rust
-/target/
-Cargo.lock
-/target/
+# Ignore target directory in all subdirectories
+**/target/
 
-# Generated files
+# Ignore Cargo.lock in all subdirectories
+**/Cargo.lock
+
+# Ignore common build artifacts
 *.rs.bk
-*.rs.swp
-
-# IDE files
-.idea/
-.vscode/
-
-# Rust/Cargo specific
-/rustfmt.toml
-/Cargo.toml.orig
-
-# Test result files
-/target/debug/
-/target/release/
-
-# Documentation
-/target/doc/
-
-# Build artifacts
 *.rlib
 *.rmeta
 
-# Other
-.DS_Store
+# Ignore IDE files in all subdirectories
+**/.idea/
+**/.vscode/
+
+# Ignore editor backup files
+*~
+
+# Ignore test result files in all subdirectories
+**/target/debug/
+**/target/release/
+
+# Ignore documentation in all subdirectories
+**/target/doc/
+
+# Ignore temporary files
+*.tmp
+*.log
+
+# Ignore profiling data
+*.prof
+
+# Ignore build configuration files in all subdirectories
+**/.rustfmt.toml
